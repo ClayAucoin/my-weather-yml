@@ -1,0 +1,31 @@
+// I want to have the data here put in HTML elements
+
+var noWeather = {
+    "latitude": 29.95653,
+    "longitude": -90.07374,
+    "generationtime_ms": 0.034809112548828125,
+    "utc_offset_seconds": 0,
+    "timezone": "GMT",
+    "timezone_abbreviation": "GMT",
+    "elevation": 10,
+    "current_units": {
+        "time": "iso8601",
+        "interval": "seconds",
+        "apparent_temperature": "°F"
+    },
+    "current": {
+        "time": "2025-08-28T00:00",
+        "interval": 900,
+        "apparent_temperature": 91.6
+    }
+};
+
+
+var noLatitude = noWeather.latitude;
+var noLongitute = noWeather.longitude;
+var noTemp = noWeather.current.apparent_temperature;
+
+setText("nolatitude", noLatitude);
+setText("nolongitude", noLongitute);
+setText("notemp", noTemp);
+
